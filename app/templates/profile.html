@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block css %} {% endblock%} 
+
+{# flask --app app --debug run#}
+
+{% block main %}
+    <div class="Main-card">
+        <div class="summary-info1">
+            <img src="{{url_for('static', filename='a1.jpg')}}" alt="Image of Aisha" id="aishi_image">
+            <h3>Aisha Forrester</h3>
+            <p>@coder_girl</p>
+            <p>Kingston, Jamaica </p>
+
+            <!--Having access to the dateJoined object as it was sent over from the profile view function-->
+            <p>{{ dateJoined }}</p>
+        </div>
+
+        <div class="summary-info2">
+            <p>A Software Engineering student who is fascinated with web design and development. Feel free to
+                contact me if you'd like us to work together on a new project </p>
+
+            <div class="follow-info">
+                <div class="posts">
+                    <p class="count">85</p> 
+                    <p class="label">Posts</p> 
+                </div>
+
+                <div class="following">
+                    <p class="count">85</p> 
+                    <p class="label">Following</p>
+                </div>
+
+                <div class="follower">
+                    <p class="count">150</p>  
+                    <p class="label">Followers</p>
+                </div>
+                        
+            </div>
+
+            <a href=""><button id="button">Follow</button></a>
+        </div>
+            
+            
+        
+    </div> 
+{% endblock %}

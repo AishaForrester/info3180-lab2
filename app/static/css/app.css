@@ -1,3 +1,103 @@
-body {
+html, body {
+    height: 100%;
     padding-top: 5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/*___________________________________Main-card div css_______________________________________*/
+.Main-card {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/*____________________________________summary-info1 div css___________________________________*/
+
+.summary-info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 68, 95);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+
+}
+.summary-info1 p, h3 {
+    color: aliceblue;
+    
+}
+.summary-info1 h3 {
+    font-weight: bold;
+
+}
+#aishi_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+}
+
+
+
+/* The follow-info css */
+.follow-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.follow-info div {
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+/* Label for followers/following/posts */
+.label {
+    font-size: 1.1em;
+    color: #888;
+}
+
+/* Count of followers/following/posts */
+.count {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+/*______________________________sumamaryinfo2 div css________________________________*/
+.summary-info2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+#button {
+    background-color: rgb(247, 163, 177);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: #888;
+    border: none;
+}
+
+#button:hover {
+    background-color: rgb(216, 59, 85);
 }
